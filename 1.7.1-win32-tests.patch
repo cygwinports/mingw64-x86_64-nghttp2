@@ -1,0 +1,12 @@
+Otherwise symbols are marked dllimport and fail to link statically
+
+--- origsrc/nghttp2-1.7.1/tests/Makefile.am	2016-02-11 08:15:13.000000000 -0600
++++ src/nghttp2-1.7.1/tests/Makefile.am	2016-03-31 12:17:09.260333300 -0500
+@@ -72,6 +72,7 @@ AM_CFLAGS = $(WARNCFLAGS) \
+ 	-I${top_srcdir}/lib \
+ 	-I${top_srcdir}/lib/includes \
+ 	-I${top_builddir}/lib/includes \
++	-DNGHTTP2_STATICLIB \
+ 	@CUNIT_CFLAGS@ @DEFS@
+ 
+ TESTS = main
