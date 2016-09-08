@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-nghttp2"
-VERSION=1.7.1
+VERSION=1.14.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="HTTP/2 C library for Win64 toolchain"
